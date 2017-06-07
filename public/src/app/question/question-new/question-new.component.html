@@ -1,0 +1,9 @@
+<h3>Add a Question</h3>
+
+<form (submit)="addQuestionInNewComponent(formData)" #formData="ngForm">
+<!-- when we add this form its going to add a new friend into out component -->
+  Question: <input type="text" name="question" ngModel>
+  Description: <input type="text" name="description" ngModel>
+
+  <input type="submit" value="Add">
+</form>

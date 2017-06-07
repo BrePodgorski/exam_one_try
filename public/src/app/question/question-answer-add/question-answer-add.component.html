@@ -1,0 +1,11 @@
+<p>
+  question-answer-add works!
+</p>
+<form (submit)="addAnswerInNewComponent(formData)" #formData="ngForm">
+<!-- when we add this form its going to add a new friend into out component -->
+  Your Answer: <input type="text" name="answer" ngModel>
+  Description: <input type="text" name="ans_description" ngModel>
+  Name: <input type="text" name="name" ngModel>
+
+  <input type="submit" value="Answer">
+</form>

@@ -1,0 +1,21 @@
+<div *ngIf="question">
+  <h3>Question: {{question.question}}</h3>
+  <h3>Description: {{question.description}}</h3>
+
+
+
+  <!-- <tr *ngFor="let answer of answers">
+
+    <th>{{answer.name}}{{answer.answer}}{{answer.description}}{{answer.like_count}}</th>
+    <a href="like">LIKE</a>
+    <th><a [routerLink]="['/show', friend._id]">Show</a></th>
+    <th><a [routerLink]="['/edit', friend._id]">Update</a></th>
+    <th><button (click)="deleteFriendInComponent(friend._id)">Delete</button></th>
+
+  </tr>
+
+  <h3>Answers: {{.birthday | date: 'mediumDate'}}</h3> -->
+
+</div>
+<app-question-answer></app-question-answer>
+<!-- <app-question-answer-add></app-question-answer-add> -->

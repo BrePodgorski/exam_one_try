@@ -1,0 +1,19 @@
+
+<!-- <a [routerLink]="['/new']">Add a Question</a> -->
+<table>
+  <tr>
+    <th>Question</th>
+    <th>Answers</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let question of questions">
+    <!-- this is how you make a for loop in an html -->
+    <th>{{question.question}}</th>
+    <th>Answer count here</th>
+    <th><a [routerLink]="['/show', question._id]">Show</a></th>
+    <th><a [routerLink]="['/answer', question._id]">Answer</a></th>
+
+  </tr>
+</table>
+
+<!-- {{question.answer_count}} -->
